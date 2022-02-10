@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import BarChartWithDH from '@visdesignlab/data-hunches-react';
 import './App.css';
 
 function App() {
+  const exampleData = [{ label: "a", value: 9, categorical: 'A' }, { label: "b", value: 2, categorical: 'B' }, { label: "c", value: 2, categorical: 'A' }, { label: "d", value: 3, categorical: 'A' }, { label: "e", value: 5, categorical: 'A' }, { label: "f", value: 7, categorical: 'A' }, { label: "g", value: 9, categorical: 'C' }, { label: "h", value: 5, categorical: 'B' }];
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BarChartWithDH dataSet={exampleData} svgWidth={500} svgHeight={500} datasetName="test" />
     </div>
+
   );
 }
 
