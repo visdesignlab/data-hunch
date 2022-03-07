@@ -7,7 +7,7 @@ function App() {
   return (
 
     <div className="App">
-      <BarChartWithDH dataSet={exampleData} svgWidth={500} svgHeight={500} datasetName="test" />
+      <BarChartWithDH dataSet={exampleData} svgWidth={500} svgHeight={500} datasetName="test2" />
     </div>
 
   );
