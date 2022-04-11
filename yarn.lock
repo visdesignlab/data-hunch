@@ -2614,10 +2614,10 @@
     "@typescript-eslint/types" "5.11.0"
     eslint-visitor-keys "^3.0.0"
 
-"@visdesignlab/data-hunches-react@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@visdesignlab/data-hunches-react/-/data-hunches-react-0.0.15.tgz#0eb47f9195927151e3bc824202613730f4a8bf03"
-  integrity sha512-ZIbWiGCmDFuB3WaSwwv8pDHpMQUDVcrTqAnIZK0JTtb8CsXFhoHP/MkHKy8dJOce5QxHiag1jPfqr07rrfcShw==
+"@visdesignlab/data-hunches-react@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@visdesignlab/data-hunches-react/-/data-hunches-react-0.1.5.tgz#1a02081894f58ebbb31b04edfa5fb000726d6092"
+  integrity sha512-Y/pdeeXTEGiU7JLYxoSQdUUdyZAYdRV1DDsCIEbVCz1b7ttgWrEwHw7IS4Yt3jVXbN96tFmKSd10+gDlgiRq0g==
   dependencies:
     "@material-ui/core" "^4.12.2"
     "@material-ui/data-grid" "^4.0.0-alpha.37"
@@ -2627,20 +2627,23 @@
     d3-axis "^3.0.0"
     d3-delaunay "^6.0.2"
     d3-drag "^3.0.0"
+    d3-format "^3.1.0"
     d3-scale "^4.0.2"
     d3-scale-chromatic "^3.0.0"
     d3-selection "^3.0.0"
     d3-shape "^3.1.0"
+    d3-textwrap "^3.0.0"
+    d3-timer "^3.0.1"
     d3-transition "^3.0.1"
     firebase "^9.6.6"
     mathjs "^10.1.1"
     mobx "^6.3.13"
     mobx-react "^7.2.1"
     react-google-login "^5.2.2"
-    react-rough "^2.3.0"
     roughjs "^4.5.2"
     styled-components "^5.3.3"
     typescript "^4.5.5"
+    webfontloader "^1.6.28"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -4038,7 +4041,7 @@ d3-drag@^3.0.0:
   resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-3.0.1.tgz#9658ac38a2140d59d346160f1f6c30fda0bd12f4"
   integrity sha512-wR/XK3D3XcLIZwpbvQwQ5fK+8Ykds1ip7A2Txe0yxncXSdq1L9skcG7blcedkOX+ZcgxGAmLX1FrRGbADwzi0w==
 
-"d3-format@1 - 3":
+"d3-format@1 - 3", d3-format@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-3.1.0.tgz#9260e23a28ea5cb109e93b21a06e24e2ebd55641"
   integrity sha512-YyUI6AEuY/Wpt8KWLgZHsIU86atmikuoOmCfommt0LYHiQSPjvX2AcFc38PX0CBpr2RCyZhjex+NS/LPOv6YqA==
@@ -4079,12 +4082,24 @@ d3-selection@3, d3-selection@^3.0.0:
   resolved "https://registry.yarnpkg.com/d3-selection/-/d3-selection-3.0.0.tgz#c25338207efa72cc5b9bd1458a1a41901f1e1b31"
   integrity sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==
 
+d3-selection@^1.0.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/d3-selection/-/d3-selection-1.4.2.tgz#dcaa49522c0dbf32d6c1858afc26b6094555bc5c"
+  integrity sha512-SJ0BqYihzOjDnnlfyeHT0e30k0K1+5sR3d5fNueCNeuhZTnGw4M4o8mqJchSwgKMXCNFo+e2VTChiSJ0vYtXkg==
+
 d3-shape@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-3.1.0.tgz#c8a495652d83ea6f524e482fca57aa3f8bc32556"
   integrity sha512-tGDh1Muf8kWjEDT/LswZJ8WF85yDZLvVJpYU9Nq+8+yW1Z5enxrmXOhTArlkaElU+CTn0OTVNli+/i+HP45QEQ==
   dependencies:
     d3-path "1 - 3"
+
+d3-textwrap@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/d3-textwrap/-/d3-textwrap-3.0.0.tgz#ed2855fd41cb15533a724284c03d67cb8294043f"
+  integrity sha512-Uj2YFm95i+bM4nu1+jIUJdB6U0sW/K0D506u6tYbTEkt0+SNeEWPJ8bZbvBHPhOqom/UK6hyrMAY7JYA6t6XIg==
+  dependencies:
+    d3-selection "^1.0.2"
 
 "d3-time-format@2 - 4":
   version "4.1.0"
@@ -4100,7 +4115,7 @@ d3-shape@^3.1.0:
   dependencies:
     d3-array "2 - 3"
 
-"d3-timer@1 - 3":
+"d3-timer@1 - 3", d3-timer@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-3.0.1.tgz#6284d2a2708285b1abb7e201eda4380af35e63b0"
   integrity sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==
@@ -4242,11 +4257,6 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
-
-dequal@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
-  integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -8234,13 +8244,6 @@ react-refresh@^0.11.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-rough@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/react-rough/-/react-rough-2.3.0.tgz#4c53ba7c29c2f4f9e938a4b1c3c25cb84aed6caa"
-  integrity sha512-c+sSchwgBYZXM3MuuXaPjzHirFT8LOOzu7H+fhJQEz9OnfZ0P/2xHzyJiUoVh7/q1aQLj8WLmrq3DxiSrhyK6g==
-  dependencies:
-    use-deep-compare-effect "^1.3.1"
-
 react-scripts@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-5.0.0.tgz#6547a6d7f8b64364ef95273767466cc577cb4b60"
@@ -9538,14 +9541,6 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-deep-compare-effect@^1.3.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/use-deep-compare-effect/-/use-deep-compare-effect-1.8.1.tgz#ef0ce3b3271edb801da1ec23bf0754ef4189d0c6"
-  integrity sha512-kbeNVZ9Zkc0RFGpfMN3MNfaKNvcLNyxOAAd9O4CBZ+kCBXXscn9s/4I+8ytUER4RDpEYs5+O6Rs4PqiZ+rHr5Q==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    dequal "^2.0.2"
-
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -9635,6 +9630,11 @@ web-vitals@^2.1.0:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
   integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
